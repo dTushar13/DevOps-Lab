@@ -29,6 +29,7 @@ pipeline {
                 steps { 
                     sh "npm start"
                     echo "Running deploy phase. " 
+                    sh "npm stop. "
                 }
             }
         }
