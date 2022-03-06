@@ -21,11 +21,13 @@ pipeline {
         stages { 
             stage ('Build') { 
                 steps { 
+                    sh "npm install"
                     echo "Running build phase. " 
                 }
             }
             stage ('Deploy') { 
                 steps { 
+                    sh "npm start"
                     echo "Running deploy phase. " 
                 }
             }
