@@ -20,7 +20,7 @@ pipeline {
         stages { 
             stage ('Build') { 
                 steps { 
-                    sh "Running build phase. " 
+                    echo "Running build phase. " 
                 }
             }
         }
